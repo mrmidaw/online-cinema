@@ -1,5 +1,10 @@
 {
-  "name": "online-cinema",
+  "name": "online-cinema-frontend-next.js",
+  "author": {
+    "email": "mr.midaw@gmail.com",
+    "name": "Вадим"
+  },
+  "description": "Premium project online cinema",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,10 +15,12 @@
   },
   "dependencies": {
     "next": "12.3.1",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.3.1",
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
