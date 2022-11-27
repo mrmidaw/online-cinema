@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 
+import SkeletonLoading from "../../../../ui/skeleton-loader/SkeletonLoader";
 import { Menu } from "../Menu";
 
 import { usePopularGenres } from "./usePopularGenres";
-import SkeletonLoading from "@/components/ui/SkeletonLoading";
 
 export const GenreMenu: FC = () => {
 	const { isLoading, data } = usePopularGenres();

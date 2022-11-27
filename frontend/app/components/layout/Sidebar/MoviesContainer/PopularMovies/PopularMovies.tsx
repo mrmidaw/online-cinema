@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import { useQuery } from "react-query";
 
+import SkeletonLoading from "../../../../ui/skeleton-loader/SkeletonLoader";
 import MovieList from "../MovieList/MovieList";
 
-import SkeletonLoading from "@/components/ui/SkeletonLoading";
 import { MovieService } from "@/services/movie.service";
 
 const PopularMovies: FC = () => {
