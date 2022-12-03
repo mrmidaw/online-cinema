@@ -8,8 +8,8 @@ export const store = configureStore({
 	devTools: true,
 });
 
-type RootState = ReturnType<typeof store.getState>;
 type AppDispatch = typeof store.dispatch;
 
+export type TypeRootState = ReturnType<typeof store.getState>;
+
 export const useAppDispatch = () => useDispatch<AppDispatch>();
-export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;

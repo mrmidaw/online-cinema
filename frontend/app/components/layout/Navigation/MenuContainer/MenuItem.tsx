@@ -1,19 +1,13 @@
-import classNames from "classnames";
 import cn from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { FC } from "react";
+import { FC } from "react";
 
 import { IMenuItem } from "./Menu.interface";
 import styles from "./Menu.module.scss";
 import { MaterialIcon } from "@/components/ui/MaterialIcon";
 
-interface IProps {
-	item: IMenuItem;
-	key: number;
-}
-
-export const MenuItem: FC<IProps> = ({ item, key }) => {
+export const MenuItem: FC<{ item: IMenuItem }> = ({ item }) => {
 	const { asPath } = useRouter();
 
 	return (
